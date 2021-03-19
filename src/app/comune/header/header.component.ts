@@ -7,9 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  private sidebarVisibile = false;
-
   @Output() sidebarToggleChanged = new EventEmitter<boolean>();
+  sidebarVisibile = false;
 
   /**
    * crea un nuovo componente
