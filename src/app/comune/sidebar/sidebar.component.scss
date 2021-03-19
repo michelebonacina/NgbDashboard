@@ -36,7 +36,7 @@
   color: #333;
 }
 
-.sidebar .nav-link .feather {
+.sidebar .nav-link .ng-fa-icon {
   margin-right: 4px;
   color: #727272;
 }
@@ -45,8 +45,8 @@
   color: #007bff;
 }
 
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
+.sidebar .nav-link:hover .ng-fa-icon,
+.sidebar .nav-link.active .ng-fa-icon {
   color: inherit;
 }
 

@@ -1,5 +1,7 @@
 // librerie
 import { Component, Input, OnInit } from '@angular/core';
+// moduli applicativi
+import { VOCI_MENU } from './@config/sidebar-menu.config';
 
 @Component({
   selector: 'mbd-sidebar',
@@ -8,6 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   @Input() sidebarVisibile = false;
+  vociMenu = VOCI_MENU;
 
   /**
    * crea un nuovo componente
