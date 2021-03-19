@@ -1,10 +1,11 @@
+// librerie
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ngb-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'NgbDashboard';
-}
+  titolo = 'NgbDashboard';
+} // AppComponent
