@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngb-root',
+  selector: 'mbd-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

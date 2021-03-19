@@ -2,7 +2,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ngb-sidebar',
+  selector: 'mbd-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
 })

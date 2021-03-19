@@ -2,7 +2,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'ngb-header',
+  selector: 'mbd-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
