@@ -1,11 +1,11 @@
 <!-- header inizio -->
-<ngb-header></ngb-header>
+<ngb-header (sidebarToggleChanged)="onSidebarToggle($event)"></ngb-header>
 <!-- header fine -->
 
 <div class="container-fluid">
   <div class="row">
     <!-- sidebar inizio -->
-    <ngb-sidebar></ngb-sidebar>
+    <ngb-sidebar [sidebarVisibile]="sidebarVisibile"></ngb-sidebar>
     <!-- sidebar fine -->
 
     <!-- content inizio -->
