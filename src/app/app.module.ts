@@ -7,26 +7,13 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { registerLocaleData } from '@angular/common';
 import localeIt from '@angular/common/locales/it';
-import {
-  FaIconLibrary,
-  FontAwesomeModule,
-} from '@fortawesome/angular-fontawesome';
-import {
-  faChartArea as fasChartArea,
-  faChartLine as fasChartLine,
-  faFileAlt as fasFileAlt,
-  faLayerGroup as fasLayerGroup,
-  faShoppingCart as fasShoppingCart,
-  faTachometerAlt as fasTachometerAlt,
-  faStar as fasStar,
-  faUserFriends as fasUserFriends,
-} from '@fortawesome/free-solid-svg-icons';
+import { CookieService } from 'ngx-cookie-service';
 
 // moduli applicativi
+import { IconModule } from './@core/icon/icon.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comune/header/header.component';
 import { SidebarComponent } from './comune/sidebar/sidebar.component';
-import { CookieService } from 'ngx-cookie-service';
 
 /**
  * factory per il caricamento dei file per la traduzione
@@ -44,7 +31,7 @@ registerLocaleData(localeIt);
   imports: [
     BrowserModule,
     NgbModule,
-    FontAwesomeModule,
+    IconModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -58,17 +45,4 @@ registerLocaleData(localeIt);
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(library: FaIconLibrary) {
-    // Add multiple icons to the library
-    library.addIcons(
-      fasChartArea,
-      fasChartLine,
-      fasFileAlt,
-      fasLayerGroup,
-      fasShoppingCart,
-      fasStar,
-      fasTachometerAlt,
-      fasUserFriends
-    );
-  }
 } // AppModule
